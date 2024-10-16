@@ -1,0 +1,41 @@
+
+#game-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.show-game-area{
+    max-width:320px;
+    margin-top: 20px;
+    border:2px solid black;
+    padding:15px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:15px;
+    color:white;
+    background-color: black;
+}
+
+.hide-game-area{
+    display: none;
+}
+
+#gif-container{
+    height:200px;
+    width:200px;
+}
+
+#gif-container > img{ 
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.select-option{
+    cursor: pointer;
+    margin-left: 5px;
+}
+

@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+#register-page{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#register-card{
+    height: 400px;
+    width:400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#img-container{
+    height:100%;
+    width:100%;
+    background-image: url('https://wallpapercave.com/wp/wp8121931.jpg');
+    background-position-x:center ;
+    background-position-y:center ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#playerName{
+    font-size: larger;
 }
 
-.App-link {
-  color: #61dafb;
+#scoreboard-title{
+    padding: 15px;
+    text-align: center;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: bolder;
+    font-style:normal;
+    font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#scoreboard{
+    height:100vh;
+    width:100vw;
+    background: #314755;  
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  
+    background: linear-gradient(to right, #26a0da, #314755); 
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+#logo div{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#logo div img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.nav-options{
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 400;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-options:hover{
+    background-color: black;
+}
+
+.active-nav{
+    font-weight: bold;
+    text-decoration: underline;
 }

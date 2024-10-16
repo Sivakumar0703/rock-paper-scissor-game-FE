@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.choice {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+
+.createOrJoinCointainer{
+    padding:15px;
+    border:2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.join-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.join-container input {
+    padding:5px;
+    border-radius: 5px;
+    
+}
+
+.marquee-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height:40px;
+    background-color: blue;
+}
+
+.headline-scroll{
+    background-color: blue;
+    color:white;
+    font-size: larger;
+    height:100%;
+}
+
+.welcome-note{
+    margin: 3px;
+    text-align: center;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+}
+
+@media (max-width: 576px) { 
+
+    .createOrJoinCointainer{
+        padding:15px;
+        border:2px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    .join-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.play-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
