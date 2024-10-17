@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ROCK-PAPER-SCISSOR
 
-## Available Scripts
+I have created a simple real-time rock-paper-scissors game using Socket.IO and ReactJS and Bootstrap. 
 
-In the project directory, you can run:
 
-### `npm start`
+## Demo Video
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![Watch the video](https://drive.google.com/file/d/1MynH20kw_SZxsVWzxzeOvoQ9PZiWU8pK/view?usp=drive_link)](https://drive.google.com/file/d/1KditwEL-8sd9AfikZROTmxci37Itro_O/view?usp=drive_link)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run Locally
 
-### `npm run build`
+Clone the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```git
+  git clone https://github.com/Sivakumar0703/rock-paper-scissor-game-FE
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Go to the project directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```git
+  cd my-project
+```
 
-### `npm run eject`
+Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```git
+  npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```git
+  npm run start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Documentation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Enter your name in the input box and click on 'ENTER GAME' to get into the game page. It will take you to the endpoint '/game-page' Where actually you can play this game.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To play the game you have to either 'CREATE' a new game or 'JOIN' the existing game with the access code. Player Who opts for creating a game will generate the access code Which is displayed above the create game area.
 
-### Code Splitting
+Once the other player joined the game the creator will get the notification. The one Who creates the game becomes the player-1 by default.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+As soon as the other player join the game , the game gets started automatically player can choose any of these options['rock' , 'paper' , 'scissor'] from the game area.Below that you can also see that your opponent made his choice or still thinking.
 
-### Analyzing the Bundle Size
+Once both the players made their choice the result of the game is displayed through the toast message and the game history is recorder below the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+After completing the six games the final result will be showed.
 
-### Making a Progressive Web App
+Player can also check the scoreboard by clicking on the scoreboard menu at the top right corner of the game page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
