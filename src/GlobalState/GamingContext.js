@@ -9,8 +9,10 @@ let socket;
 let isMounted;
 
 const GamingContext = ({ children }) => {
-  const baseUrl = "https://rock-paper-scissor-game-be.onrender.com";
-  const url = "https://rock-paper-scissor-game-be.onrender.com/api/rps";
+  const baseUrl = "http://localhost:8000";
+  // const baseUrl = "https://rock-paper-scissor-game-be.onrender.com";
+  const url = "http://localhost:8000/api/rps";
+  // const url = "https://rock-paper-scissor-game-be.onrender.com/api/rps";
   const [createButton , setCreateButton] = useState("CREATE");
   const [joinButton , setJoinButton] = useState("JOIN");
   const [showGameArea, setShowGameArea] = useState(false);

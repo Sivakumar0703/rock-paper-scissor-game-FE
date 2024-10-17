@@ -5,6 +5,7 @@ import CreateOrJoinGame from './CreateOrJoinGame';
 import PlayArea from './PlayArea';
 import ResultConatiner from './ResultConatiner';
 import Header from './Header';
+import BounceLoader from "react-spinners/BounceLoader";
 
 const Layout = () => {
     const {blastPop,isLoading,playerData,socket} = useContext(gamingContext);
@@ -38,7 +39,7 @@ const Layout = () => {
         }
 
         {
-            isLoading  ? <p>LOADING....</p> : <>
+            isLoading  ? <div className='loader'> <BounceLoader loading={isLoading} color='black' /> </div> : <>
             <Header />
             <CreateOrJoinGame />
             {socket && playerData? <PlayArea /> : "Loading..."}

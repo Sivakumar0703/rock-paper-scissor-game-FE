@@ -5,6 +5,8 @@ import { gamingContext } from '../GlobalState/GamingContext';
 import moment from "moment";
 import "../App.css";
 import Header from './Header';
+import BounceLoader from "react-spinners/BounceLoader";
+
 
 const ScoreboardTable = () => {
 
@@ -77,7 +79,7 @@ const ScoreboardTable = () => {
             </tbody>
             </table>
 
-            </> : <p>Loading...</p>
+            </> : <div className='loader'> <BounceLoader loading={isLoading} color='black' /> </div>
         }
     </div>
   )

@@ -64,13 +64,16 @@ const CreateOrJoinGame = () => {
     // save these data to DB => player-id , access-code , opponent-name , is-player1
     async function updateGamerData(opponentName,room,isP1){
         try {
+            console.log("line-1")
             let data = {
                 id:playerId ,
                 is_player1 : isP1,
                 code:room,
                 opponent_name:opponentName,
             }
+            console.log("line-2")
             await axios.put(`${url}/update_gamer` , data);
+            console.log("line-3")
             setShowGameArea(true);
             setTrigger((prev) => !prev);
         } catch (error) {
@@ -108,7 +111,7 @@ const CreateOrJoinGame = () => {
   return (
     <div>
         {
-            loading ? <p>loading...</p> : <>
+            loading ? <></> : <>
          <div className="marquee-container">
             <div style={{width:"100%"}}>
                 {
